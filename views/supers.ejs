@@ -1,31 +1,48 @@
 <%- include("partials/header"); -%> 
 
 
+<div class="row d-flex justify-content-center my-5">
 
-<div id="header" class="text-center">
-    <h1>Superhero Showdown!</h1>
-</div>
-
-<div class="container text-center justify-content-around">
-    <div class="row">
-        <div class="col-12 col-lg-4">
-        <h2><%=hero%></h2>
-        </div>
-        <div class="col-12 col-lg-4">
-        <h3>VS</h3>
-        </div>
-        <div class="col-12 col-lg-4">
-        <h2><%=villain%></h2>
-        </div>
+    <div class="col-12">
+        <div id="header" class="text-center">
+            <h1>SUPER SHOWDOWN</h1>
+        </div>        
     </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-12">
-        <form action="/">
-            <button name="generateNew" type="submit">Generate New</button>
-        </form>
-        </div>
+    <div class="col-12 text-center">
     </div>
 </div>
+
+
+<div class="container d-flex flex-column justify-content-center" id="mainContent">
+
+
+
+
+    <div class="container text-center mt-5">
+
+        <div class="row justify-content-around  align-items-center">
+            <div class="col-12 col-lg-12">
+                <h2 style="font-family:<%=font1%>"><%=hero%></h2>
+            </div>
+            <div class="col-12 col-lg-12">
+                <img src="img/vs.png" alt="vs" id="vs">
+            </div>
+            <div class="col-12 col-lg-12">
+                <h2 style="font-family:<%=font2%>"><%=villain%></h2>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+  <div id="footer" class="container-fluid">
+      <div class="row justify-content-center">
+        <p class="mt-5">Made by DevDesJam</p>
+      </div>
+  </div>
 
 
 
